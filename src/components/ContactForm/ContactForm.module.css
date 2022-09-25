@@ -1,24 +1,15 @@
-.input {
-  font-size: 25px;
-  padding: 10px;
-  margin: 10px;
-
-  border-radius: 3px;
+.box{
+  display: flex;
+  align-items: center;
 }
 
-.input:hover {
-  color: palevioletred;
-}
+
 
 .btn {
-  font-size: 30px;
+  font-size: 20px;
   margin-left: 20px;
   padding: 5px 20px;
-
   border-radius: 3px;
 }
 
-btn:hover {
-  color: red;
-  font-size: 35px;
-}
+

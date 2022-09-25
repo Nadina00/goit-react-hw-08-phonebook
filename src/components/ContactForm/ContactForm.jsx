@@ -52,6 +52,7 @@ export function ContactForm() {
           color="success"
           variant="filled"
           size="small"
+          sx={{mr: 2}}
           className={css.input}
         />
       </Typography>
@@ -75,9 +76,9 @@ export function ContactForm() {
         type="submit"
         disabled={!(name && number)}
         variant="contained"
-        size="small"
+        size="large"
         className={css.btn}
-        sx={{ ml: 3 }}
+        sx={{ ml: 1}}
       >
         Add contact
       </Button>
@@ -86,7 +87,7 @@ export function ContactForm() {
 }
 
 ContactForm.propTypes = {
-  onSubmit: PropTypes.func.isRequired,
+  onSubmit: PropTypes.func,
   name: PropTypes.string,
   number: PropTypes.number,
   id: PropTypes.string,

@@ -14,8 +14,7 @@ export const AppBar = () => {
       <Toolbar>
         <nav className={css.box}>
           <Navigation />
-
-          {isLoggedIn ? <UserMenu /> : <Auth />}
+         {isLoggedIn ? <UserMenu /> : <Auth />}
         </nav>
       </Toolbar>
     </Box>

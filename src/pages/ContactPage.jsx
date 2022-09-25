@@ -12,7 +12,9 @@ import contactsOperations from '../redux/contacts/contacts-operation';
 export default function ContactPage({ name, number }) {
   const dispatch = useDispatch();
 
-  useEffect(() => dispatch(contactsOperations.fetchContacts()), [dispatch]);
+  useEffect(() => {
+    dispatch(contactsOperations.fetchContacts());
+  }, [dispatch]);
 
   const filterCont = useSelector(contactsSelector.getFilter);
 

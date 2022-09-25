@@ -4,8 +4,7 @@ import css from './ContactList.module.css';
 import { Contact } from './Contact';
 
 export const ContactList = ({ contacts }) => {
-  console.log(contacts);
-  if (contacts) {
+   if (contacts) {
     return (
       <ul>
         {contacts.map(contact => (

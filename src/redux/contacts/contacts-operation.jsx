@@ -4,11 +4,11 @@ import {fetchContactsRequest, fetchContactsSuccess, fetchContactsError,
 
 axios.defaults.baseURL = 'https://connections-api.herokuapp.com'
 
-const fetchContacts = () =>  dispatch => {
+const fetchContacts = () => async dispatch => {
     dispatch(fetchContactsRequest());
   
     try {
-      const { data } =  axios.get('/contacts');
+      const { data } =  await axios.get('/contacts');
       dispatch(fetchContactsSuccess(data));
     } catch (error) {
       dispatch(fetchContactsError(error.message));

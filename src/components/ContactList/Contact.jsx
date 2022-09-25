@@ -8,8 +8,7 @@ import contactsOperations from 'redux/contacts/contacts-operation';
 export const Contact = ({ contact }) => {
   const dispatch = useDispatch();
 
-  console.log(contact.id);
-  const onDeleteContact = id => dispatch(contactsOperations.deleteContact(id));
+   const onDeleteContact = id => dispatch(contactsOperations.deleteContact(id));
 
   return (
     <List
